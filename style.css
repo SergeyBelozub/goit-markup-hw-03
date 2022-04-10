@@ -143,6 +143,8 @@ img {
 
 /* button */
 .button {
+  padding: 10px 32px;
+  min-height: 30px;
   margin: auto;
   display: block;
   font-family: inherit;

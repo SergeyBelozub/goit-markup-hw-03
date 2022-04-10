@@ -8,6 +8,9 @@ html {
   --color-btn: #2196f3;
   /* indent */
   --fitst-text-ind: 50px;
+  --item-item-ind: 30px;
+  --box-border-card: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -34,12 +37,7 @@ p {
 
 img {
   display: block;
-}
-.name-team,
-.position-team,
-.text-title,
-.subtitle {
-  border: 1px solid rebeccapurple;
+  max-width: 100%;
 }
 
 *,
@@ -63,16 +61,28 @@ img {
   margin: -1px;
 }
 
+/* Top header */
 .header .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .navigation .style-nav,
-.style-contact {
+.style-contact,
+.container-nav {
+  align-items: center;
   display: flex;
 }
-
-/* Top header */
+.style-nav {
+  margin-left: 93px;
+}
+.header-item:not(:last-child) {
+  margin-right: var(--fitst-text-ind);
+}
+.header > .container {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -133,6 +143,8 @@ img {
 
 /* button */
 .button {
+  margin: auto;
+  display: block;
   font-family: inherit;
   cursor: pointer;
   font-weight: 700;
@@ -152,7 +164,14 @@ img {
 }
 
 /* content text */
-.content-text {
+.container .content-text {
+  display: flex;
+}
+.text + .text {
+  margin-left: var(--item-item-ind);
+}
+.content-text,
+.content {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -171,6 +190,12 @@ img {
 }
 
 /* content-picture */
+.content-item {
+  display: flex;
+}
+.content-subitem + .content-subitem {
+  margin-left: var(--item-item-ind);
+}
 .content-picture {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -188,13 +213,20 @@ img {
 }
 
 /* content-team */
-
+.container .team-item {
+  display: flex;
+}
+.work-title + .work-title {
+  margin-left: var(--item-item-ind);
+}
 .content-team {
   padding-top: 94px;
   padding-bottom: 94px;
   background: #f5f4fa;
 }
 .work-title {
+  box-shadow: var(--box-border-card);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--first-color-content);
 }
 .name-team {
@@ -223,8 +255,8 @@ img {
 
 /* Footer */
 .footer-bg {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #2f303a;
 }
 .contact-adress {
@@ -253,7 +285,18 @@ img {
 
 /* PORTOFOLIO */
 /* button */
+.container .portfolio-title {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-list + .portfolio-list {
+  margin-bottom: 30px;
+  margin-left: 8px;
+}
+
 .sections-btn {
+  min-height: 38px;
+  padding: 6px 22px 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -268,7 +311,31 @@ img {
   background-color: #f5f4fa;
   color: var(--main-color);
 }
+.praymeri-btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--color-btn);
+  color: var(--first-color-content);
+}
+/* content portfolio */
+.portfolio-item {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.porfolio-subtitle {
+  max-width: 370px;
+  border: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 -var(--item-item-ind));
+  margin-left: var(--item-item-ind);
+  margin-bottom: var(--item-item-ind);
+}
+
 .prtf-first {
+  margin-left: 24px;
+  margin-top: 26px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -278,6 +345,8 @@ img {
   color: var(--main-color);
 }
 .prtf-second {
+  margin-bottom: 20px;
+  margin-left: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;

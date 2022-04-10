@@ -19,30 +19,35 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <!--Top header  -->
   <body>
     <header class="header">
       <div class="container">
-        <a class="logo" href="./">Web<span class="logo-studio">Studio</span></a>
-        <nav class="navigation">
-          <ul class="style-nav">
-            <li class="studio"><a href="" class="studio link">Студия</a></li>
-            <li class="portfolio">
-              <a href="./portfolio/portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="contact"><a href="" class="link">Контакты</a></li>
-          </ul>
-        </nav>
-
+        <div class="container-nav">
+          <a class="logo" href="./"
+            >Web<span class="logo-studio">Studio</span></a
+          >
+          <nav class="navigation">
+            <ul class="style-nav">
+              <li class="header-item studio">
+                <a href="" class="studio link">Студия</a>
+              </li>
+              <li class="header-item portfolio">
+                <a href="./portfolio/portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="contact"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
         <ul class="style-contact">
-          <li>
+          <li class="header-item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="header-item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -72,21 +77,21 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="text">
               <h3 class="text-title">Пунктуальность</h3>
               <p class="subtitle">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="text">
               <h3 class="text-title">Планирование</h3>
               <p class="subtitle">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="text">
               <h3 class="text-title">Современные технологии</h3>
               <p class="subtitle">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -100,18 +105,18 @@
       <section class="content-picture">
         <div class="container">
           <h2 class="content-subject">Чем мы занимаемся</h2>
-          <ul>
-            <li>
+          <ul class="content-item">
+            <li class="content-subitem">
               <img src="./images/box1.jpg" alt="работает на пк" width="370" />
             </li>
-            <li>
+            <li class="content-subitem">
               <img
                 src="./images/box2.jpg"
                 alt="тестирует моб.приложения"
                 width="370"
               />
             </li>
-            <li>
+            <li class="content-subitem">
               <img
                 src="./images/box3.jpg"
                 alt="работает с палитрой цветов"
@@ -126,7 +131,7 @@
       <section class="content-team">
         <div class="container">
           <h2 class="my-team">Наша команда</h2>
-          <ul>
+          <ul class="team-item">
             <li class="work-title">
               <img src="./images/img.jpg" alt="brown shirt" width="270" />
               <h3 class="name-team">Игорь Демьяненко</h3>

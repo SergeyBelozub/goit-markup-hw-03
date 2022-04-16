@@ -30,9 +30,14 @@ h5 {
 }
 ul,
 ol,
+li,
+a,
+span,
 p {
   margin: 0;
   padding-left: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 img {
@@ -44,8 +49,6 @@ img {
 *::after,
 *::before {
   box-sizing: inherit;
-  text-decoration: none;
-  list-style-type: none;
 }
 
 .visually-hidden {
@@ -62,6 +65,10 @@ img {
 }
 
 /* Top header */
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid #ececec;
+}
 .header .container {
   display: flex;
   align-items: center;
@@ -79,10 +86,7 @@ img {
 .header-item:not(:last-child) {
   margin-right: var(--fitst-text-ind);
 }
-.header > .container {
-  border-bottom: 1px solid #ececec;
-  height: 80px;
-}
+
 .container {
   width: 1200px;
   padding-left: 15px;

@@ -271,9 +271,7 @@ img {
 .ctn:focus {
   color: var(--first-color-content);
 }
-.ctn {
-  margin-bottom: 9px;
-}
+
 .city,
 .imail,
 .telefon {

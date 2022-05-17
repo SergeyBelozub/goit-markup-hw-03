@@ -152,6 +152,7 @@ img {
   display: block;
   font-family: inherit;
   cursor: pointer;
+  border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -219,12 +220,14 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background: #f5f4fa;
 }
 .work-title {
   box-shadow: var(--box-border-card);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--first-color-content);
+}
+.section-team {
+  background-color: #f5f4fa;
 }
 .conteiner-team {
   padding: 20px 0 20px 0;
